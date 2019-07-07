@@ -64,6 +64,31 @@
 
 <script type="text/javascript">
 	// your solution here
+    
+   
+      
+    
+    
+    
+  $( "div.p2-circle.bg-purple" ).click(function() {
+    $("div.bg-purple").hide()
+  });
+  
+  $( "div.p2-circle.bg-green" ).click(function() {
+    $("div.p2-circle.bg-green").hide()
+    $("div.p2-circle.bg-blue").hide()
+  });
+  
+  $('div.p2-circle.bg-orange.p2-border').click(function(){
+     $('div.p2-circle.bg-orange.p2-border').not(this).each(function(){
+         $(this).hide()
+     });
+     
+})
+ 
+  $("#gradient-circle").hover(function(){$(this).css('opacity','0');},function(){$(this).css('opacity','1');});
+ 
+  
 
 </script>
 </body>
